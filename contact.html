@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html class="no-js" lang="">
 
   <head>
@@ -19,10 +18,11 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <link href="sandbox.css" rel="stylesheet">
-    <link href="css/animsition.min.css" rel="stylesheet">
 
     <meta name="theme-color" content="#fafafa">
+
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
@@ -67,6 +67,16 @@
         });
 			}
 
+
+			// // Log scroll events
+			// var logScrollEvent = function (event) {
+			// 	console.log('type:', event.type);
+			// 	console.log('anchor:', event.detail.anchor);
+			// 	console.log('toggle:', event.detail.toggle);
+			// };
+			// document.addEventListener('scrollStart', logScrollEvent, false);
+			// document.addEventListener('scrollStop', logScrollEvent, false);
+			// document.addEventListener('scrollCancel', logScrollEvent, false);
 		</script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
@@ -77,185 +87,67 @@
     });
     </script>
 
-
-
-
   </head>
 
   <body>
-    <div class="animsition">
 
-      <!--header-->
+    <!--header-->
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-          <img src="./img/logo.PNG"/ class="logo" height="80" width="90">
-          <button class="navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav text-header ml-auto mb-2 mb-lg-0">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <img src="./img/logo.PNG"/ class="logo" height="80" width="90">
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+              data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav text-header ml-auto mb-2 mb-lg-0">
 
-              <li class="nav-item">
-                <a class="nav-link active animsition-link" aria-current="page" href="index.html">Inicio</a>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" data-scroll href="#bazinga">Novedades</a>
-              </li>
+            <li class="nav-item dropdown">
 
-              <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                Inmuebles
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Castro Urdiales</a></li>
+                <li><a class="dropdown-item" href="#">Bilbao</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
 
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                  Inmuebles
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Castro Urdiales</a></li>
-                  <li><a class="dropdown-item" href="#">Bilbao</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Quienes somos</a>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link active animsition-link" aria-current="page" href="sobrenosotros.html">Quienes somos</a>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contact.html">Contáctanos</a>
+            </li>
 
-              <li class="nav-item">
-                <a class="nav-link active animsition-link" aria-current="page" href="contact.html">Contáctanos</a>
-              </li>
-
-            </ul>
-          </div>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
 
-      <!--/header-->
-
-      <!--fotoindex-->
-
-
-        <div class="container-fluid">
-          <img src="./img/castro10.PNG" alt="castroindex" style="width:100%" class="mx-auto d-block">
-        </div>
+    <!--/header-->
 
 
-        <!--/fotoindex-->
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
-
-
-        <!--jumbotron-->
-
-        <div class="jumbotron">
-          <h1 class="display-4"><center><strong>Bilbolar<strong><center></h1>
-          <hr class="my-4">
-          <h2 class="jumbo"><center><span class="typed"></span><center></h2>
-          <p class="lead">
-          </p>
-        </div>
-
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-        <script src="js/main.js"></script>
-        <script>
-        import Typed from 'typed.js';
-
-        var options = {
-          strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
-          typeSpeed: 40
-        };
-
-        var typed = new Typed('.element', options);
-        </script>
-
-        <!--/jumbotron-->
-
-
-
-        <!--fotoindex2-->
-
-
-        <div class="container-fluid">
-              <img src="./img/cvastro4.0.jpg" alt="castrogif" style="width:100%" class="mx-auto d-block">
-        </div>
-
-
-        <!--/fotoindex2-->
-
-        <div id="bazinga"></div>
-
-        <!--cards-->
-
-
-        <h1 class="title">Novedades</h1>
-        <br /><br />
-
-        <div class="container">
-
-          <div class="card">
-              <img src="./img/castro1.jpg">
-              <h4>Piso 1</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
-              <a href="#">Leer más</a>
-          </div>
-
-          <div class="card">
-              <img src="./img/castro2.jpg">
-              <h4>Piso 2</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
-              <a href="#">Leer más</a>
-          </div>
-
-          <div class="card">
-              <img src="./img/castro3.jpg">
-              <h4>Piso 3</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
-              <a href="#">Leer más</a>
-          </div>
-
-          <div class="card">
-              <img src="./img/castro1.jpg">
-              <h4>Piso 4</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
-              <a href="#">Leer más</a>
-          </div>
-
-          <div class="card">
-              <img src="./img/castro2.jpg">
-              <h4>Piso 5</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
-              <a href="#">Leer más</a>
-          </div>
-
-          <div class="card">
-              <img src="./img/castro3.jpg">
-              <h4>Piso 6</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, excepturi unde?</p>
-              <a href="#">Leer más</a>
-          </div>
-
-        </div>
-
-
-
-        <!--/cards-->
-
-
-
-      <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-      <script src="js/plugins.js"></script>
-      <script src="js/main.js"></script>
-
-      <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-      <script>
-        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-        ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-      </script>
-      <script src="https://www.google-analytics.com/analytics.js" async></script>
-      <br /><br />
-      <br /><br />
-    </div>
-
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+    <br /><br />
+    <br /><br />
   </body>
 
 
@@ -268,8 +160,8 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-6">
-          <h6>Contáctanos</h6>
-          <p class="gmail">bilbolar@gmail.com</p>
+          <h6>About</h6>
+          <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         </div>
 
         <div class="col-6 col-md-3">
@@ -277,12 +169,15 @@
           <ul class="footer-links ">
             <li><a href="#">Castro</a></li>
             <li><a href="#">Mioño</a></li>
-            <li><a href="#">Bilbao</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Video Editor</a></li>
+            <li><a href="#">Theme Creator</a></li>
+            <li><a href="#">Templates</a></li>
           </ul>
         </div>
 
         <div class="col-6 col-md-3">
-          <h6>Acceso rápido</h6>
+          <h6>Quick Links</h6>
           <ul class="footer-links">
             <li><a href="#">Ir arriba</a></li>
             <li><a href="#">Quienes somos</a></li>
