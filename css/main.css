@@ -427,3 +427,7 @@ import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;50
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
+
+.no-margin{
+  margin-bottom: 0 !important;
+}
