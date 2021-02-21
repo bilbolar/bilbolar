@@ -59,7 +59,7 @@ body{
 
 .parallax-quienes {
     height: 600px;
-    background-image: url('../img/1270.jpg');
+    background-image: url('../img/biblaop.JPG');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -139,4 +139,17 @@ body{
   .parallax-index1{
       width: 100%;
       height: 600px;}
+}
+
+
+.parallax-contact {
+    height: 600px;
+    background-image: url('../img/csatro.gif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
