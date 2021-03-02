@@ -62,13 +62,19 @@ article {
 	font-size: 16px;
 	line-height: 28px;
 	padding: 40px;
+
 }
+
 
 article h2 {
 	color: #2D5F85 !important;
 	font-size: 32px;
 	font-weight: normal;
 	margin-bottom: 20px;
+}
+
+article p {
+	color: #000000 !important;
 }
 
 table {
@@ -90,4 +96,12 @@ table {
 	main {
 		margin-top: 50px;
 	}
+}
+
+.precio {
+	background-color: #f4f4fa !important ;
+}
+
+h1.red {
+	color: red !important;
 }

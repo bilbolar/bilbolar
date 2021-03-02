@@ -240,7 +240,7 @@ body{
 
 .container .card{
     width: 330px;
-    height: 430px;
+    height: 460px;
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -399,4 +399,21 @@ import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;50
 
 .icons-contact li {
   margin-top: 30px;
+}
+
+.colorbil {
+  color: #006aad;
+}
+
+.footer-margin {
+  margin-top: 100px;
+  padding-top: 100px;
+}
+
+.castro {
+
+    list-style: none;
+    display: inline-flex;
+    text-align: center;
+
 }
