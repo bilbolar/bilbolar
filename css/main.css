@@ -387,6 +387,21 @@ import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;50
   transition: all 0.2s linear;
 }
 
+.icons-contact-down {
+  list-style: none;
+  margin-top: 30px;
+  display: inline-flex;
+  display: center;
+}
+
+.icons-contact-down a {
+
+}
+
+.icons-contact-down li {
+  margin-left: 25px;
+}
+
 .icons-contact {
   list-style: none;
   margin-top: 25px;
@@ -416,4 +431,14 @@ import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;50
     display: inline-flex;
     text-align: center;
 
+}
+
+
+.container-fluid {
+  padding-left: 0px !important ;
+  padding-right: 0px !important ;
+}
+
+.article-sm {
+  margin: 0px !important;
 }
