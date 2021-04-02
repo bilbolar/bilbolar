@@ -596,8 +596,8 @@ body {
     -o-transition: all 300ms ease-in;
 }
 .cookies-box .container-cookies .buttons button:hover {
-    color: #f00;
-    border: 2px solid #f00;
+    color: white;
+    border: 2px solid white;
 }
 .cookies-box .container-cookies .buttons button:last-child {
     margin-top: 5px;
