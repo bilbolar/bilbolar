@@ -449,3 +449,229 @@ article2 {
 .icons-contact-down {
   align-items: center;
 }
+
+
+body {
+  background-size:cover;
+  background-position:top;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  background-color: white;
+}
+.overlay{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  z-index:-1;
+}
+.countdown-container{
+  display:flex;
+}
+.big-text{
+  font-size:4rem;
+}
+.title{
+  margin:10px;
+  text-align:center;
+  color:#006aad;
+  width:100%;
+  letter-spacing:2px;
+  font-size: 3rem;
+  line-height: 5.5rem;
+}
+.title span{
+  display:block;
+  font-size:6rem;
+  letter-spacing:2rem;
+}
+.wrapper{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap: wrap;
+  min-height:100vh;
+}
+.countdown-container > div{
+  margin:0 2rem;
+  text-align: center;
+  border:2px solid #006aad ;
+  padding:0px 20px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.5);
+  box-sizing: border-box;
+  color: #006aad;
+  min-width:150px;
+}
+@media (max-width:992px){
+  .countdown-container > div{
+    margin:0 1rem;
+  }
+}
+@media (max-width:767px){
+  .countdown-container{
+    flex-wrap: wrap;
+  }
+  .countdown-container > div{
+    margin:1rem auto;
+    max-width:150px;
+  }
+  .title{
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    margin:10px 0px;
+  }
+  .title span{
+    font-size: 2rem;
+    letter-spacing: 1rem;
+  }
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+.cookies-box {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    background: #006aad;
+    transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+}
+.cookies-box .container-cookies {
+    padding: 20px 0;
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+
+}
+.cookies-box .container-cookies .paragraphs p {
+    color: #fff;
+}
+.cookies-box .container-cookies .paragraphs p a {
+    color: #cccccc;
+    transition: all 300ms ease-in;
+    -webkit-transition: all 300ms ease-in;
+    -moz-transition: all 300ms ease-in;
+    -ms-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+}
+.cookies-box .container-cookies .paragraphs p a:hover {
+    color: #fff;
+}
+.cookies-box .container-cookies .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+.cookies-box .container-cookies .buttons button {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    transition: all 300ms ease-in;
+    -webkit-transition: all 300ms ease-in;
+    -moz-transition: all 300ms ease-in;
+    -ms-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+}
+.cookies-box .container-cookies .buttons button:hover {
+    color: #f00;
+    border: 2px solid #f00;
+}
+.cookies-box .container-cookies .buttons button:last-child {
+    margin-top: 5px;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border: 1px solid rgba(0,0,0,.5);
+    padding: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transition: all 400ms ease;
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+}
+.modal .titulo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.modal .titulo #close_modal {
+    padding: 10px;
+    border: 2px solid #000;
+    background: transparent;
+    font-weight: bold;
+    transition: all 200ms ease;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+}
+.modal .titulo #close_modal:hover {
+    color: #f00;
+    border: 2px solid #f00;
+}
+.modal .parrafo {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.modal .aceptar button {
+    background: transparent;
+    color: #000;
+    border: 2px solid #000;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    transition: all 300ms ease-in;
+    -webkit-transition: all 300ms ease-in;
+    -moz-transition: all 300ms ease-in;
+    -ms-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+}
+.modal .aceptar button:hover {
+    color: #f00;
+    border: 2px solid #f00;
+}
+
+
+@media (max-width: 576px) {
+    .modal {
+        width: 70%;
+        height: 40%;
+    }
+}
