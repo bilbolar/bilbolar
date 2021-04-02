@@ -664,7 +664,7 @@ body {
     -o-transition: all 300ms ease-in;
 }
 .modal .aceptar button:hover {
-    color: #f00;
+    color: white;
     border: 2px solid #f00;
 }
 
