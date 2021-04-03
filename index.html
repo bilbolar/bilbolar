@@ -139,25 +139,45 @@
 
       <!--cookies-->
 
-      <div class="cookies-box">
-          <div class="container-cookies">
-              <div class="paragraphs">
-                  <p>En Bilbolar usamos cookies o tecnologías similares para analizar nuestros servicios y así poder mejorar en base a un perfil elaborado a partir de los
-                     hábitos de navegación (por ejemplo, páginas visitadas). Si continúas navegando, consideraremos que aceptas su uso. Puedes aceptar la utilización de
-                      cookies u obtener más información en nuestra política de cookies pulsando <a href="./politica.pdf">AQUÍ</a></p>
-              </div>
+      <div id="div-cookies" style="display: none;">En Bilbolar usamos cookies o tecnologías similares para analizar nuestros servicios y así poder mejorar en base a un perfil elaborado a partir de los
+         hábitos de navegación (por ejemplo, páginas visitadas).</br> Si continúas navegando, consideraremos que aceptas su uso. Puedes aceptar la utilización de
+          cookies u obtener más información en nuestra política de cookies pulsando <a href="./politica.pdf">AQUÍ</a></br></br>
 
-              <div class="buttons">
-                  <button id="aceptar_cookie">Aceptar</button>
-                  <button id="close">Cerrar</button>
-              </div>
-          </div>
+      <button type="button" class="btn btn-sm btn-primary" onclick="acceptCookies()">
+      Acepto el uso de cookies
+      </button>
       </div>
+      <style>
+      #div-cookies {
+          position: fixed;
+          bottom: 0px;
+          left: 0px;
+          width: 100%;
+          background-color: white;
+          box-shadow: 0px -5px 15px gray;
+          padding: 7px;
+          text-align: center;
+          z-index: 99;
+      }
+      </style>
+      <script>
+      function checkAcceptCookies() {
+          if (localStorage.acceptCookies == 'true') {} else {
+              $('#div-cookies').show();
+          }
+      }
+
+      function acceptCookies() {
+          localStorage.acceptCookies = 'true';
+          $('#div-cookies').hide();
+      }
+      $(document).ready(function() {
+          checkAcceptCookies();
+      });
+      </script>
 
 
-      <script src="./js/script.js"></script>
-
-      <!--cookies-->
+      <!--/cookies-->
 
       <!--fotoindex-->
 
