@@ -678,3 +678,33 @@ body {
 .margin-card {
   margin-top: 30px;
 }
+
+@media (max-width: 576px) {
+    .ytvideo {
+      height: 230px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+  .ytvideo {
+    height: 280px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .ytvideo {
+    height: 320px;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+  .ytvideo {
+    height: 380px;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+  .ytvideo {
+    height: 450px;
+  }
+}
